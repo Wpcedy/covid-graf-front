@@ -9,4 +9,3 @@ Projeto Graficos Covid 19 front - PROCESSO SELETIVO
 
 # Iniciar serviço
 - `npm start`
-

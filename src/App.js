@@ -57,7 +57,7 @@ function App() {
   useEffect(() => {
     axios({
       method: 'get',
-      url: process.env.URL_BACK + '/regions',
+      url: process.env.API_URL + '/regions',
     }).then((response) => {
       setPaises(response.data);
     }).catch((error) => {
@@ -92,7 +92,7 @@ function App() {
 
         axios({
           method: 'get',
-          url: process.env.URL_BACK + '/report?region_name=' + name + '&iso=' + iso
+          url: process.env.API_URL + '/report?region_name=' + name + '&iso=' + iso
         }).then(response => {
           setReportPaisSelecionado(response.data);
           setSubmitted(false);

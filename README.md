@@ -5,7 +5,7 @@ Projeto Graficos Covid 19 front - PROCESSO SELETIVO
 - Node 16.14
 
 # Configuração
-- Configurar a variavel de ambiente URL_BACK ou substituir ela no arquivo `./src/App.js`
+- Configurar a variavel de ambiente URL_BACK ou substituir ela no arquivo `.env`
 
 # Iniciar serviço
 - `npm start`

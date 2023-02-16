@@ -57,7 +57,7 @@ function App() {
   useEffect(() => {
     axios({
       method: 'get',
-      url: 'https://covid-graf-back-production.up.railway.app/regions',
+      url: 'http://localhost:5000/regions',
     }).then((response) => {
       setPaises(response.data);
     }).catch((error) => {
@@ -92,7 +92,7 @@ function App() {
 
         axios({
           method: 'get',
-          url: 'https://covid-graf-back-production.up.railway.app/report?region_name=' + name + '&iso=' + iso
+          url: 'http://localhost:5000/report?region_name=' + name + '&iso=' + iso
         }).then(response => {
           setReportPaisSelecionado(response.data);
           setSubmitted(false);
@@ -141,3 +141,4 @@ function App() {
 }
 
 export default App;
+
